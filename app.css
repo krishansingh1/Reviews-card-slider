@@ -5,3 +5,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+h1,h2,h3,h4{
+    letter-spacing: 0.25rem;
+}
+
+.container{
+    text-align: center;
+}
+.title h2{
+    display: grid;
+    align-items: center;
+}
