@@ -27,12 +27,14 @@ h4 {
 }
 
 .container {
-  text-align: center;
-  margin-top: 2.3rem;
+  width: 80vw;
+  max-width: 620px;
+  margin-top: 3.2rem;
 }
 
 h2 {
   font-size: 2rem;
+  text-align: center;
   margin-bottom: 0.5rem;
 }
 
@@ -47,8 +49,6 @@ h2 {
 .review {
   border: 1px solid #fff;
   background: #fff;
-  width: 510px;
-  height: 430px;
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -118,7 +118,7 @@ h2 {
   transition: all 0.3s linear;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 800px) {
   h2 {
     font-size: 2.5rem;
     font-weight: bold;
