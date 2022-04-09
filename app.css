@@ -107,6 +107,11 @@ h2 {
   margin-bottom: 0.7rem;
 }
 
+.prev-btn:hover,
+.next-btn:hover {
+  color: hsl(205, 78%, 60%);
+}
+
 .random-btn {
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
@@ -116,6 +121,11 @@ h2 {
   border-color: hsl(205, 78%, 60%);
   cursor: pointer;
   transition: all 0.3s linear;
+}
+
+.random-btn:hover {
+  background: hsl(205, 78%, 60%);
+  color: hsl(205, 86%, 17%);
 }
 
 @media screen and (min-width: 800px) {
