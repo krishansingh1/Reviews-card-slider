@@ -1,4 +1,5 @@
 const reviews = [
+
     {
         id: 1,
         name: 'Susan Smith',
@@ -32,6 +33,7 @@ const reviews = [
     }
 ]
 
+
 const img = document.getElementById('person-img');
 const _name = document.getElementById('author');
 const job = document.getElementById('job');
@@ -45,6 +47,7 @@ let currentItem = 0;
 
 window.addEventListener('DOMContentLoaded', () => {
     const item = reviews[currentItem];
+    console.log(item);
     img.src = item.img;
     _name.textContent = item.name;
     job.textContent = item.job;
@@ -61,6 +64,7 @@ function getPerson(person) {
 
 next_btn.addEventListener('click', () => {
     currentItem++;
+    console.log(currentItem++);
     if (currentItem > reviews.length - 1) {
         currentItem = 0;
     }
@@ -77,6 +81,7 @@ prev_btn.addEventListener('click', () => {
 
 random_btn.addEventListener('click', () => {
     random = randomNumber();
+    console.log(random);
     getPerson(random)
 })
 
