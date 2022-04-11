@@ -48,43 +48,60 @@ let currentItem = 0;
 window.addEventListener('DOMContentLoaded', () => {
     const item = reviews[currentItem];
     console.log(item);
+
     img.src = item.img;
+
     _name.textContent = item.name;
+
     job.textContent = item.job;
+
     review.textContent = item.info;
 })
 
 function getPerson(person) {
     item = reviews[person];
+
     img.src = item.img;
+
     _name.textContent = item.name;
+
     job.textContent = item.job;
+
     review.textContent = item.info;
 }
 
 next_btn.addEventListener('click', () => {
     currentItem++;
     console.log(currentItem++);
+
     if (currentItem > reviews.length - 1) {
+
         currentItem = 0;
+
     }
     getPerson(currentItem);
 })
 
 prev_btn.addEventListener('click', () => {
     currentItem--
+
     if (currentItem < 0) {
+
         currentItem = reviews.length - 1;
+
     }
     getPerson(currentItem);
 })
 
 random_btn.addEventListener('click', () => {
     random = randomNumber();
+
     console.log(random);
+
     getPerson(random)
 })
 
 const randomNumber = function () {
+
     return Math.floor(Math.random() * reviews.length);
 }
